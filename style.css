@@ -1,0 +1,184 @@
+/* HEADER SECTION */
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+}
+.main-header{
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+.main-header__navigation{
+    display: flex;
+    column-gap: 50px;
+    width: fit-content;
+    margin-left: auto;
+    align-items: center;
+}
+.main-header__link{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    text-decoration: none;
+    
+}
+.action-button{
+    display: flex;
+    background: #B59571;
+    width: 145px;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* WELCOME SECTION */
+.welcome-section{
+    background-image: url(./img/welcome-section-bgc.png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    margin-top: -72px;
+}
+
+.welcom-section__title{
+    font-size: 38px;
+    line-height: 165%;
+    color: white;
+    width: 605px;
+    padding-top: 541px;
+    padding-bottom: 150px;
+    margin: 0 auto;
+}
+
+/* left navigation */
+.left-navigation{
+    background-color: #333333;
+    position: absolute;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo{
+    fill:#B59571;
+    text-align: center;
+}
+.logo:hover svg{
+    fill:white;
+}
+.menu{
+    fill:#B59571;
+    text-align: center;
+}
+.menu:hover svg{
+    fill: white;
+}
+.link-social-instagram, .link-social-youtube, .link-social-telegram{
+    fill:#B59571;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link-social-instagram:hover svg, .link-social-youtube:hover svg, .link-social-telegram:hover svg{
+    fill: white;
+}
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link-social{
+    text-decoration: none;
+}
+
+
+/* modal window */
+#modal-window{
+    position: fixed;/* фиксирует все окно */
+    left: 0;/* растягиваем на весь экран */
+    top: 0;/* растягиваем на весь экран */
+    right: 0;/* растягиваем на весь экран */
+    bottom: 0;/* растягиваем на весь экран */
+    background-color: #333333;
+    opacity: 0; /* Невидемый */
+    pointer-events: none;/* дает возможность либо разрешить мишкой кликать либо нет None-разрешает  */
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 0;
+    height: 0;
+}
+#modal-window.active{
+    /* opacity: 0; */
+    opacity: 1;
+    pointer-events: all;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease-in-out,width 0.3s ease-in-out, height 1s ease-in-out;
+}
+
+.close-modal{
+    fill:#B59571;
+    text-align: center;
+}
+.close-modal:hover svg{
+    fill: white;
+}
+.services-block{
+    text-align: center;
+    line-height: 40px;
+}
+.services-text{
+    color: white;
+    font-style: normal;
+    font-size: 20px;
+}
+.background-text{
+    background-color: #B59571;
+    width: 10%;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.link-services{
+    text-decoration: none;
+}
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+/* new section */
+
+.info{
+    width: 59%;
+    margin: 0 auto;
+}
+.info-title{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+.line_info{
+    width: 60px;
+    height: 3px;
+    background-color: #B59571;
+}
+.information-text{
+    display: flex;
+    margin: 0 auto;
+    column-gap: 134px;
+    padding-left: 18%;
+}
